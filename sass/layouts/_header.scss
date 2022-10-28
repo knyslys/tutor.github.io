@@ -1,0 +1,88 @@
+.header {
+  height: 100vh;
+  .header-grid {
+    margin-top: 2rem;
+    .get-started {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .header-textbox {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .heading-spaced {
+        margin-left: 1rem;
+      }
+    }
+
+    .header-cardbox {
+      // overflow: hidden;
+      // display: flex;
+      // justify-content: center;
+
+      overflow-x: hidden;
+      .card-slider {
+        // overflow-x: scroll;
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+        margin-left: 15rem;
+        // margin-top: 10rem;
+        align-items: center;
+      }
+
+      .card-container {
+        min-width: 85%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        transition: 0.35s all linear;
+      }
+      .card-dots {
+        text-align: center;
+        margin-top: 1rem;
+
+        .dot {
+          border-radius: 500%;
+
+          width: 1.5rem;
+          height: 1.5rem;
+          display: inline-block;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &-active {
+            background-color: $main-color;
+          }
+          &-unactive {
+            background-color: #cab8ac;
+          }
+        }
+      }
+    }
+  }
+
+  .rating-box {
+    // background-color: #f5b22c;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .icon-box {
+      background-color: #f5b22c;
+      font-size: 3rem;
+      padding: 2rem;
+      display: inline-block;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      max-width: fit-content;
+      border-radius: 5px;
+    }
+  }
+}

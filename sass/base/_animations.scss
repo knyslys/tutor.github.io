@@ -1,0 +1,17 @@
+@keyframes displayTopNav {
+  0% {
+    padding-bottom: 2.5rem;
+  }
+  100% {
+    padding-bottom: 0;
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}

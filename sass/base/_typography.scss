@@ -1,0 +1,68 @@
+body {
+  font-size: 1.6rem;
+  color: $text-color-tint;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: $default-size-biggest;
+  font-weight: 700;
+  color: $text-color;
+}
+
+.heading-spaced {
+  font-weight: 700;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-size: $default-size-bigger;
+}
+
+.heading-primary {
+  font-size: 11rem;
+  word-spacing: -0.7rem;
+  letter-spacing: -0.2rem;
+  line-height: 1.1;
+  color: $text-color;
+}
+
+.job {
+  padding: 0.9rem 1.4rem 0.4rem 1.4rem;
+  border-radius: 5px;
+  &-blue {
+    background-color: rgba($color: #cbeef7, $alpha: 0.5);
+    color: #2bd5ff;
+  }
+
+  &-orange {
+    background-color: rgba($color: #f5cb57, $alpha: 0.5);
+    color: #f3b919;
+  }
+
+  &-green {
+    background-color: rgba($color: #9cff8f, $alpha: 0.5);
+    color: #61de50;
+  }
+}
+
+.title {
+  position: relative;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  top: 0;
+
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+}

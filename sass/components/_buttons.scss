@@ -1,0 +1,35 @@
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  font-size: $default-size-bigger;
+  display: inline-block;
+}
+
+.btn-red {
+  background-color: $main-color;
+  color: #fff;
+  position: relative;
+
+  &:hover {
+    &::before {
+      animation: buttonHover 0.35s linear;
+    }
+  }
+
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-color: $main-color;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+  }
+}
+
+.btn-trans {
+  border: 1.3px solid black;
+  color: $text-color;
+}

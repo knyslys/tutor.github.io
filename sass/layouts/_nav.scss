@@ -1,0 +1,79 @@
+.top-nav {
+  .nav-status {
+    display: none;
+  }
+
+  a {
+    color: $text-color-tint;
+  }
+
+  .top-nav__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__navbar {
+      .nav-list {
+        display: flex;
+        gap: 3rem;
+
+        .nav-item a:hover {
+          color: #494142;
+        }
+      }
+    }
+
+    &__signup {
+      .nav-signup-list {
+        display: flex;
+        gap: 3rem;
+        font-size: $default-size-bigger;
+        align-items: center;
+        .sign-up {
+          background-color: $text-color;
+          color: white;
+          padding: 1rem 2.5rem;
+          border-radius: 5px;
+        }
+
+        .log-in {
+          color: $text-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.fixed-nav {
+  position: fixed;
+  background-color: #f0e4dc;
+  // transition: 0.2s all linear;
+  animation: displayTopNav 0.25s linear;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+  .container {
+    padding: 1rem;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav {
+  .top-nav__flex__navbar {
+    display: none;
+  }
+
+  .top-nav__flex__signup {
+    display: none;
+  }
+}
+
+.mobile-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  filter: blur(30px);
+}
